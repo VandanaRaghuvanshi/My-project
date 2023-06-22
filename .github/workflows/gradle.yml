@@ -17,10 +17,7 @@ on:
 jobs:
   build:
 
-    runs-on: ${{matrix.os}}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, window-latest, macOS-latest]
+    runs-on: van-self
 
     steps:
     - uses: actions/checkout@v2
